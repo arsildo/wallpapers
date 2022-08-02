@@ -27,5 +27,5 @@ for src in wallpapers/*; do
   thumb_url="$url_root/thumbnails/$filename_escaped"
   pape_url="$url_root/wallpapers/$filename_escaped"
 
-#  echo "[![$filename]($thumb_url)]($pape_url)" >>README.md
+  echo "[![$filename]($thumb_url)]($pape_url)" >>README.md
 done
