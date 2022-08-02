@@ -6,7 +6,7 @@
 #
 # Uses imagemagick's `convert`, so make sure that's installed.
 # On Nix, nix-shell -p imagemagick --run ./make_gallery.sh
-rm -rf thumbnails
+# rm -rf thumbnails
 mkdir -p thumbnails wallpapers
 
 url_root="https://raw.githubusercontent.com/arsildo/wallpapers/main"
@@ -27,5 +27,5 @@ for src in wallpapers/*; do
   thumb_url="$url_root/thumbnails/$filename_escaped"
   pape_url="$url_root/wallpapers/$filename_escaped"
 
-  echo "[![$filename]($thumb_url)]($pape_url)" >>README.md
+#  echo "[![$filename]($thumb_url)]($pape_url)" >>README.md
 done
